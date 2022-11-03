@@ -51,21 +51,3 @@ This project is being Tested by jasmine and supertest.
   /api/image/resize   Will take query parameters to resize the image.
   /api/image/resize?name={name}&width={width}&height={height}    Give right parameters to get api work.
   /api/reset       Will delete the thumbnail folder if it exists.
-
-
-  ## Rquired
-  Arranging dependencies correctly.
-  Separating out image processing function.
-  Handling errors and providing error messages.
-  Including test specs for image processing.
-  Defining return type and including type parameters for functions and callbacks.
-
-  # Done
-  * I had arranged the dependencies correctly by removing all the dependencies from the dependencies section except.
-        {express and sharp } and all the other in devdependencies.
-  ** Sparated the image processing function in a particulat file called processing.ts.
-  *** Fixed the handling eroor problem when using  another prameters rather than the required and provide the user
-        error message.
-  **** Include test spec for image processing ,test the image processing function in isolation without sending a request
-        to the server and include reset endpoint test to delete the Thumbnail folder.
-  ***** Tried my best to define the return types,type parameters and call backs in the most of the functions.
